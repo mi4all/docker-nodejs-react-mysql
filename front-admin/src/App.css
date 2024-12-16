@@ -1,0 +1,41 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  
+  
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+  
+}
+
+.main-layout{
+  display:flex;
+  flex: 1;
+}
+
+.content{
+  padding: 20px;
+  flex:1;
+  
+}
+
+ html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #e8eff9;
+
+} 
+
+/* .container-scroller {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}   */

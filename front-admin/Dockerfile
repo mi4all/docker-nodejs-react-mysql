@@ -1,0 +1,12 @@
+# Stage 1
+FROM node:18-alpine
+
+WORKDIR /app
+COPY package.json .
+RUN npm install
+COPY . .
+
+ARG REACT_APP_API_BASE_URL
+ENV REACT_APP_API_BASE_URL=$REACT_APP_API_BASE_URL
+EXPOSE $REACT_DOCKER_PORT
+CMD ["npm", "start"]
